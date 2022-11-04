@@ -1,0 +1,56 @@
+:root {
+    --sidebar: #2C3333;
+    --mainbody: #A5C9CA;
+    --header: #395B64;
+    --background: #E7F6F2;
+  }
+
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .container {
+    background-color: var(--background);
+    height: 100vh;
+    width: 100vw;
+    display:grid;
+    gap: 8px;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: 2fr 8fr;
+  }
+
+  .header {
+    background-color: var(--header);
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .sidebar {
+    background-color: var(--sidebar);
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  .projects {
+    background-color: var(--mainbody);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .rightpanel {
+    background-color: var(--mainbody);
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .announcements {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+  }
+  .trending {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+  } 
