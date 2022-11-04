@@ -52,10 +52,14 @@
     align-items: center;
   }
 
+  .dashboard img {
+    transform: scale(1.5);
+  }
+
   .sidebar-element {
     display: flex;
-    
     align-items: center;
+    padding-left: 10px;
   }
 
   .sidebar-text {
