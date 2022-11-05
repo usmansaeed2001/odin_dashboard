@@ -32,6 +32,12 @@
     grid-row: 1 / 2;
   }
 
+
+
+
+
+
+
   .sidebar {
     background-color: var(--sidebar);
     grid-column: 1 / 2;
@@ -48,18 +54,20 @@
     color: white;
     font-size: 1.5rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  }
-
-  .dashboard img {
-    transform: scale(1.5);
   }
 
   .sidebar-element {
     display: flex;
     align-items: center;
     padding-left: 10px;
+  }
+
+  .sidebar-element:hover {
+    transform: scale(1.1);
+    cursor:pointer;
   }
 
   .sidebar-text {
