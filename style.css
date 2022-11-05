@@ -12,7 +12,7 @@
     padding: 0px;
   }
 
-  img {
+  .sidebar img {
     filter: invert();
   }
 
@@ -84,7 +84,80 @@
     background-color: var(--mainbody);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr;
   }
+
+  .project-label {
+    color: var(--sidebar);
+    font-family:'Dexend Deca', sans-serif;
+    font-size: 2rem;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 223px);
+    grid-template-rows: repeat(auto-fit, 223px);
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .card {
+    background-color: var(--background);
+    border-radius: 10%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    transition-duration: 500ms;
+    animation-timing-function: ease;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    cursor: pointer;
+  }
+
+  .card:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+
+  .card-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 223px;
+    height: 223px;
+    border-radius: 10%;
+    font-family: sans-serif;
+    font-size: 2rem;
+    color:#E7F6F2;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+
+  .card-text:hover {
+    opacity: 0%;
+    transition: 1s;
+  }
+
+    #card1 {
+      background-image: url(./project-images/calc.png);
+      background-size: cover;
+    }
+
+    #card2 {
+      background-image: url(./project-images/form.png);
+      background-size: cover;
+    }
+    #card3 {
+      background-image: url(./project-images/landing.png);
+      background-size: cover;
+    }
+    #card4 {
+      background-image: url(./project-images/rps.png);
+      background-size:contain;
+    }
+
+
 
   .rightpanel {
     background-color: var(--mainbody);
